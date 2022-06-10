@@ -8,7 +8,8 @@ public class telas extends BancoDeDados {
 	String laboratorio;
 	int stq;
 	int id;
-
+	
+	
 	public int inicial() {
 		System.out.println("===================================================================");
 		System.out.println("	            SUPER SISFARMA PREMIUM 2022                        ");
@@ -19,6 +20,14 @@ public class telas extends BancoDeDados {
 		System.out.println("               3-Editar                                            ");
 		System.out.println("               4-Inserir medicamento                               ");
 		System.out.println("               5-Apagar  medicamento                               ");
+		System.out.println("               6-Adicionar Cliente                                 ");
+		System.out.println("               7-Listar cliente                                    ");
+		System.out.println("               8-Apagar  Cliente                                   ");
+		System.out.println("               9-FORNECEDOR                                        ");
+		System.out.println("               10-LISTAR FORNECEDOR                                ");
+		System.out.println("               11-SAIR                                             ");
+		System.out.println("               12-LISTAR FORNECEDOR                                ");
+		System.out.println("               13-SAIR                                             ");
 		System.out.println("===================================================================");
 
 		Scanner sc = new Scanner(System.in);
@@ -55,6 +64,7 @@ public class telas extends BancoDeDados {
 		this.nomeMedicamento = ler.next();
 		System.out.println("quantidade de medicamento:                                          ");
 		this.stq = ler.nextInt();
+		
 
 	}
 

@@ -35,11 +35,12 @@ public class BancoDeDados {
 		}
 
 	}
-
+	
 	public void listarMercadoria() {
 		try {
 			String query = "SELECT * FROM mercadoria ORDER BY id ";
 			this.resultSet = this.statement.executeQuery(query);
+			
 			while (this.resultSet.next()) {
 				System.out.println("Id : " + this.resultSet.getString("id") + "	medicamento: "
 						+ this.resultSet.getString("nome_medicamento")
@@ -82,6 +83,14 @@ public class BancoDeDados {
 		}
 	}
 
+	/*
+	 * public void subMercadoria() { try { int c ;
+	 * 
+	 * String query = "update mercadoria SET qnt_estoque = '" +C+ "' WHERE ;";
+	 * System.out.println(query); this.statement.executeUpdate(query); } catch
+	 * (Exception e) { System.out.println("ERRO NO editar  " + e.getMessage()); } }
+	 */
+	
 	public void apagarMercadoria(int ID) {
 		try {
 
@@ -92,6 +101,7 @@ public class BancoDeDados {
 			System.out.println("ERRO NO apagar " + e.getMessage());
 		}
 	}
+
 
 	public void detalhar (int ID) {
 		try {
